@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eb60e8f-05c3-4250-b2d4-4b7813275cf7" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TarefaFinal/src/Control/ListaInvertida.java" afterPath="$PROJECT_DIR$/TarefaFinal/src/control/ListaInvertida.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,10 +25,10 @@
         </entry>
       </file>
       <file leaf-file-name="ListaInvertida.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TarefaFinal/src/Control/ListaInvertida.java">
+        <entry file="file://$PROJECT_DIR$/TarefaFinal/src/control/ListaInvertida.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="36">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -94,6 +95,8 @@
         <option value="$PROJECT_DIR$/TarefaFinal/src/model/Elemento.java" />
         <option value="$PROJECT_DIR$/TarefaFinal/src/model/Diretorio1.java" />
         <option value="$PROJECT_DIR$/TarefaFinal/src/Control/ListaInvertida.java" />
+        <option value="$PROJECT_DIR$/TarefaFinal/src/model/ListaInvertida.java" />
+        <option value="$PROJECT_DIR$/TarefaFinal/src/control/ListaInvertida.java" />
       </list>
     </option>
   </component>
@@ -168,7 +171,7 @@
               <item name="ED_UFSC" type="462c0819:PsiDirectoryNode" />
               <item name="TarefaFinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Control" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ED_UFSC" type="b2602c69:ProjectViewProjectNode" />
@@ -195,8 +198,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
@@ -204,13 +207,13 @@
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/TarefaFinal/src/view" />
-      <recent name="$PROJECT_DIR$/TarefaFinal/src/model" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Dados\Documentos\ED_UFSC\Trabalhinho1\src" />
       <recent name="D:\Dados\Documentos\ED_UFSC\Trabalhinho1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TarefaFinal/src/view" />
+      <recent name="$PROJECT_DIR$/TarefaFinal/src/model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -388,7 +391,7 @@
       <workItem from="1511109154346" duration="69000" />
       <workItem from="1511109617147" duration="1177000" />
       <workItem from="1511183782143" duration="1720000" />
-      <workItem from="1511186757047" duration="2580000" />
+      <workItem from="1511186757047" duration="2693000" />
     </task>
     <task id="LOCAL-00001" summary="teste">
       <created>1511183823992</created>
@@ -453,11 +456,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511189464439</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="New project structure">
+      <created>1511189475510</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1511189475510</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26466000" />
+    <option name="totallyTimeSpent" value="26579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-3" width="1366" height="771" extended-state="6" />
@@ -844,10 +854,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TarefaFinal/src/Control/ListaInvertida.java">
+    <entry file="file://$PROJECT_DIR$/TarefaFinal/src/control/ListaInvertida.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="36">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -904,7 +914,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ED_UFSC</last-edited>
+          <last-edited>TarefaFinal</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
