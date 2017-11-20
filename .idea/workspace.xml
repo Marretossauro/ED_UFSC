@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eb60e8f-05c3-4250-b2d4-4b7813275cf7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TrabalhoFinal/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TrabalhoFinal/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TrabalhoFinal/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TrabalhoFinal/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TrabalhoFinal/TrabalhoFinal.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TrabalhoFinal/src/Diretorio1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TrabalhoFinal/src/Diretorio2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TrabalhoFinal/src/Diretorio3.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TrabalhoFinal/src/Elemento.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TrabalhoFinal/src/ListaInvertida.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TrabalhoFinal/src/Main.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TarefaFinal/src/model/Elemento.java" afterPath="$PROJECT_DIR$/TarefaFinal/src/model/Elemento.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -347,7 +335,7 @@
       <workItem from="1511109154346" duration="69000" />
       <workItem from="1511109617147" duration="1177000" />
       <workItem from="1511183782143" duration="1720000" />
-      <workItem from="1511186757047" duration="739000" />
+      <workItem from="1511186757047" duration="1346000" />
     </task>
     <task id="LOCAL-00001" summary="teste">
       <created>1511183823992</created>
@@ -370,11 +358,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511185346899</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New project structure">
+      <created>1511187556951</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1511187556951</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24625000" />
+    <option name="totallyTimeSpent" value="25232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-3" width="1366" height="771" extended-state="6" />
@@ -417,7 +412,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="teste" />
     <MESSAGE value="Projeto Organizado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Projeto Organizado" />
+    <MESSAGE value="New project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="New project structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
