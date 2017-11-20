@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eb60e8f-05c3-4250-b2d4-4b7813275cf7" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TarefaFinal/src/model/ListaInvertida.java" afterPath="$PROJECT_DIR$/TarefaFinal/src/Control/ListaInvertida.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TarefaFinal/src/model/Diretorio1.java" afterPath="$PROJECT_DIR$/TarefaFinal/src/model/Diretorio1.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,7 +14,38 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Diretorio1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TarefaFinal/src/model/Diretorio1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListaInvertida.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TarefaFinal/src/Control/ListaInvertida.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Elemento.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TarefaFinal/src/model/Elemento.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -27,7 +60,7 @@
       <GitPushTagMode />
     </option>
     <push-targets>
-      <push-target-info target-remote="origin" target-branch="rodolfo" repo="$PROJECT_DIR$" source="master" />
+      <push-target-info target-remote="origin" target-branch="master" repo="$PROJECT_DIR$" source="master" />
     </push-targets>
     <favorite-branches>
       <branch-storage>
@@ -60,8 +93,9 @@
         <option value="$PROJECT_DIR$/TrabalhoFinal/src/Diretorio1.java" />
         <option value="$PROJECT_DIR$/TrabalhoFinal/src/Main.java" />
         <option value="$PROJECT_DIR$/TarefaFinal/src/view/Main.java" />
-        <option value="$PROJECT_DIR$/TarefaFinal/src/model/Diretorio1.java" />
         <option value="$PROJECT_DIR$/TarefaFinal/src/model/Elemento.java" />
+        <option value="$PROJECT_DIR$/TarefaFinal/src/model/Diretorio1.java" />
+        <option value="$PROJECT_DIR$/TarefaFinal/src/Control/ListaInvertida.java" />
       </list>
     </option>
   </component>
@@ -133,7 +167,21 @@
               <item name="ED_UFSC" type="462c0819:PsiDirectoryNode" />
               <item name="TarefaFinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ED_UFSC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ED_UFSC" type="462c0819:PsiDirectoryNode" />
+              <item name="TarefaFinal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ED_UFSC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ED_UFSC" type="462c0819:PsiDirectoryNode" />
+              <item name="TarefaFinal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,6 +200,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -338,7 +387,7 @@
       <workItem from="1511109154346" duration="69000" />
       <workItem from="1511109617147" duration="1177000" />
       <workItem from="1511183782143" duration="1720000" />
-      <workItem from="1511186757047" duration="1695000" />
+      <workItem from="1511186757047" duration="2440000" />
     </task>
     <task id="LOCAL-00001" summary="teste">
       <created>1511183823992</created>
@@ -382,11 +431,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511188469107</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="New project structure">
+      <created>1511188482380</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1511188482380</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25581000" />
+    <option name="totallyTimeSpent" value="26326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-3" width="1366" height="771" extended-state="6" />
@@ -757,6 +813,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TarefaFinal/src/model/Elemento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TarefaFinal/src/model/Diretorio1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -765,18 +829,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TarefaFinal/src/model/Elemento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TarefaFinal/src/model/ListaInvertida.java">
+    <entry file="file://$PROJECT_DIR$/TarefaFinal/src/Control/ListaInvertida.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />

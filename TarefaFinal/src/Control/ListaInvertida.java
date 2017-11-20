@@ -1,4 +1,4 @@
-package model;
+package Control;
 
 public class ListaInvertida
 {
