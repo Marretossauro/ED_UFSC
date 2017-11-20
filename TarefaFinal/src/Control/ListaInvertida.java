@@ -1,5 +1,5 @@
 package Control;
 
-public class ListaInvertida
-{
+public class ListaInvertida {
+
 }
