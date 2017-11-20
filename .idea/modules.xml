@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ED_UFSC.iml" filepath="$PROJECT_DIR$/.idea/ED_UFSC.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExLista/ExLista.iml" filepath="$PROJECT_DIR$/ExLista/ExLista.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TarefaFinal/TarefaFinal.iml" filepath="$PROJECT_DIR$/TarefaFinal/TarefaFinal.iml" />
       <module fileurl="file://$PROJECT_DIR$/Trabalhinho1/Trabalhinho1.iml" filepath="$PROJECT_DIR$/Trabalhinho1/Trabalhinho1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Trabalhinho2/Trabalhinho2.iml" filepath="$PROJECT_DIR$/Trabalhinho2/Trabalhinho2.iml" />
     </modules>
