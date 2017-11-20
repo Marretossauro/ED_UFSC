@@ -1,0 +1,2 @@
+public class Diretorio1 {
+}
