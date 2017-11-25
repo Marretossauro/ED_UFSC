@@ -32,4 +32,14 @@ public class Elemento {
     public Map<Integer, String> getSalarios() {
         return salarios;
     }
+
+    @Override
+    public String toString() {
+        return "Elemento{" +
+                "nome='" + nome + '\'' +
+                ", cursos=" + cursos +
+                ", profissoes=" + profissoes +
+                ", salarios=" + salarios +
+                '}';
+    }
 }
