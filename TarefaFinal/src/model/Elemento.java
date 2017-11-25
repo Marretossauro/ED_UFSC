@@ -21,6 +21,10 @@ public class Elemento {
         return nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public Map<Integer, String> getCursos() {
         return cursos;
     }
