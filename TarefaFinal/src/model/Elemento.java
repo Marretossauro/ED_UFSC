@@ -1,38 +1,35 @@
 package model;
 
+import java.util.Map;
+import java.util.TreeMap;
+
 public class Elemento {
 
-    String nome;
-    String cargo;
-    double salario;
+    private String nome;
+    private Map<Integer, String> cursos = new TreeMap<>();
+    private Map<Integer, String> profissoes = new TreeMap<>();
+    private Map<Integer, String> salarios = new TreeMap<>();
 
-    public Elemento(String nome, String cargo, double salario) {
-        this.cargo = cargo;
+    public Elemento(String nome, Map<Integer, String> cursos, Map<Integer, String> profissoes, Map<Integer, String> salarios) {
         this.nome = nome;
-        this.salario = salario;
+        this.cursos = cursos;
+        this.profissoes = profissoes;
+        this.salarios = salarios;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public Map<Integer, String> getCursos() {
+        return cursos;
     }
 
-    public String getCargo() {
-        return cargo;
+    public Map<Integer, String> getProfissoes() {
+        return profissoes;
     }
 
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
-    }
-
-    public double getSalario() {
-        return salario;
-    }
-
-    public void setSalario(double salario) {
-        this.salario = salario;
+    public Map<Integer, String> getSalarios() {
+        return salarios;
     }
 }
