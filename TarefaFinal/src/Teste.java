@@ -1,5 +1,4 @@
-import model.ControladorMultilista;
-import model.Elemento;
+import control.ControladorMultilista;
 
 public class Teste {
     public static void main(String[] args) {

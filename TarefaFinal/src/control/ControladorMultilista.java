@@ -1,4 +1,6 @@
-package model;
+package control;
+
+import model.Elemento;
 
 import javax.print.attribute.IntegerSyntax;
 import java.util.Map;
