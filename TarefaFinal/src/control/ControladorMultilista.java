@@ -56,4 +56,30 @@ public class ControladorMultilista {
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
         return salariosMap;
     }
+    public Map<Integer, Elemento> buscarCursoProfissao(String curso, String profissao){
+        Map<Integer, Elemento> cursoProfissaoMap;
+        cursoProfissaoMap = diretorioPrincipal.entrySet().stream()
+                .filter(cp -> cp.getValue().getCursos().get(cp.getKey()).equals(curso)&&cp.getValue().getProfissoes().get(cp.getKey()).equals(profissao))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+        return cursoProfissaoMap;
+    }
+    public Map<Integer, Elemento> buscarCursoSalario(String curso, double min, double max){
+        Map<Integer, Elemento> cursoSalarioMap;
+        cursoSalarioMap = diretorioPrincipal.entrySet().stream()
+                .filter(cs -> cs.getValue().getCursos().get(cs.getKey()).equals(curso)&&cs.getValue().getSalarios().get(cs.getKey())>min
+                        && cs.getValue().getSalarios().get(cs.getKey())<max)
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+        return cursoSalarioMap;
+    }
+    public Map<Integer, Elemento> buscarProfissaoSalario(String profissao, double min, double max){
+        Map<Integer, Elemento> profissaoSalarioMap;
+        profissaoSalarioMap = diretorioPrincipal.entrySet().stream()
+                .filter(ps -> ps.getValue().getProfissoes().get(ps.getKey()).equals(profissao)&&ps.getValue().getSalarios().get(ps.getKey())>min
+                        && ps.getValue().getSalarios().get(ps.getKey())<max)
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+        return profissaoSalarioMap;
+    }
+    public void excluiElemento(Integer id){
+        diretorioPrincipal.remove(id);
+    }
 }
