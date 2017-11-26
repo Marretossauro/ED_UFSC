@@ -11,7 +11,7 @@ public class TelaBusca {
 
     public TelaBusca() {
         this.teclado = new Scanner(System.in);
-        this.ctrlMultilista = new ControladorMultilista();
+        this.ctrlMultilista = ControladorMultilista.getCtrlMultlist();
     }
 
     public void menu() {
@@ -69,9 +69,9 @@ public class TelaBusca {
             case 3:
                 System.out.println("Digite um intervalo de salários para filtrar a busca");
                 System.out.println("Qual o valor mínimo do intervalo dos salários?");
-                double min = teclado.nextDouble();
+                double min = Double.parseDouble(teclado.next());
                 System.out.println("Qual o valor máximo do intervalo dos salários?");
-                double max = teclado.nextDouble();
+                double max = Double.parseDouble(teclado.next());
                 System.out.println(ctrlMultilista.buscarPorFaixaDeSalario(min, max));
                 maisOperacoes();
                 break;
@@ -116,8 +116,8 @@ public class TelaBusca {
                 teclado.nextLine();
                 curso = teclado.nextLine();
                 System.out.println("Digite o valor mínimo e valor máximo do intervalo para filtrar o salário, respectivamente");
-                double min = teclado.nextDouble();
-                double max = teclado.nextDouble();
+                Double min = Double.parseDouble(teclado.nextLine());
+                Double max = Double.parseDouble(teclado.nextLine());
                 System.out.println(ctrlMultilista.buscarCursoSalario(curso, min, max));
                 maisOperacoes();
                 break;
@@ -129,8 +129,8 @@ public class TelaBusca {
                 teclado.nextLine();
                 prof = teclado.nextLine();
                 System.out.println("Digite o valor mínimo e valor máximo do intervalo para filtrar o salário, respectivamente");
-                min = teclado.nextDouble();
-                max = teclado.nextDouble();
+                min = Double.parseDouble(teclado.nextLine());
+                max = Double.parseDouble(teclado.nextLine());
                 System.out.println(ctrlMultilista.buscarProfissaoSalario(prof, min, max));
                 maisOperacoes();
                 break;
