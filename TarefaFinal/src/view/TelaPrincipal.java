@@ -12,7 +12,7 @@ public class TelaPrincipal {
 
     public TelaPrincipal() {
         this.teclado = new Scanner(System.in);
-        this.ctrlMultilista = new ControladorMultilista();
+        this.ctrlMultilista = ControladorMultilista.getCtrlMultlist();
     }
 
     public void menu() {
@@ -34,7 +34,7 @@ public class TelaPrincipal {
                 String nome = teclado.nextLine();
                 String curso = teclado.nextLine();
                 String prof = teclado.nextLine();
-                Double salario = teclado.nextDouble();
+                Double salario = Double.parseDouble(teclado.nextLine());
                 ctrlMultilista.insereElemento(nome, curso, prof, salario);
                 maisOperacoes();
                 break;
