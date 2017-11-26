@@ -97,9 +97,14 @@ public class TelaPrincipal {
         }
     }
 
-    private void maisOperacoes() {
+    private void maisOperacoes() throws Exception {
         System.out.println("Deseja fazer mais alguma operação? Digite 1 para 'Sim' e 0 para 'Não' ");
-        int opcOp = teclado.nextInt();
+        int opcOp = 0;
+        try {
+            opcOp = teclado.nextInt();
+        } catch (Exception e) {
+            throw new ValorInvalidoException();
+        }
         if (opcOp == 1) {
             try {
                 menu();
