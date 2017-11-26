@@ -46,7 +46,7 @@ public class ControladorMultilista {
         insereElemento("Matheus", "SIN", "Web Developer", 4500.00);
         insereElemento("Jorge", "EEL", "Técnico", 1000.45);
         insereElemento("Linus", "CCO", "Engenheiro de Software", 50000.38);
-        insereElemento("Rafael", "ADM", "Rapper", 500.29);
+        insereElemento("Raphael", "ADM", "Rapper", 500.29);
     }
 
     public Map<Integer, Elemento> listaElementos() {
