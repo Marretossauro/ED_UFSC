@@ -30,9 +30,10 @@ public class TelaBusca {
     public void buscaSimples() {
         int opcao = 0;
 
-        System.out.println("Diretorio 1");
-        System.out.println("Diretorio 2");
-        System.out.println("Diretorio 3");
+        System.out.println("Curso");
+        System.out.println("Profissão");
+        //colocar oções de faixa de salarios
+        System.out.println("Salário");
 
         opcao = teclado.nextInt();
 
@@ -50,16 +51,18 @@ public class TelaBusca {
     public void buscaComposta() {
         int opcao = 0;
 
-        System.out.println("Diretorio 1");
-        System.out.println("Diretorio 2");
-        System.out.println("Diretorio 3");
+        System.out.println("Curso");
+        System.out.println("Profissão");
+        //colocar oções de faixa de salarios
+        System.out.println("Salário");
 
         opcao = teclado.nextInt();
 
         switch (opcao) {
             case 1:
-                System.out.println("Diretorio 2");
-                System.out.println("Diretorio 3");
+                System.out.println("Profissão");
+                //adicionar faixas de salario
+                System.out.println("Salário");
                 opcao = teclado.nextInt();
 
                 if (opcao == 2) {
@@ -69,8 +72,8 @@ public class TelaBusca {
                 }
 
             case 2:
-                System.out.println("Diretorio 1");
-                System.out.println("Diretorio 3");
+                System.out.println("Curso");
+                System.out.println("Salário");
                 opcao = teclado.nextInt();
                 if (opcao == 1) {
                     //busca diretorio 2 com 1
@@ -79,8 +82,8 @@ public class TelaBusca {
                 }
 
             case 3:
-                System.out.println("Diretorio 1");
-                System.out.println("Diretorio 2");
+                System.out.println("Curso");
+                System.out.println("Profissão");
                 opcao = teclado.nextInt();
                 if (opcao == 1) {
                     //busca diretorio 3 com 1
