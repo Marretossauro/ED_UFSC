@@ -7,12 +7,11 @@ import java.util.Scanner;
 public class TelaPrincipal {
 
     private Scanner teclado;
-    private TelaBusca telaBusca;
     private ControladorMultilista ctrlMultilista;
+    private TelaBusca telaBusca = new TelaBusca();
 
     public TelaPrincipal() {
         this.teclado = new Scanner(System.in);
-        this.telaBusca = new TelaBusca();
         this.ctrlMultilista = new ControladorMultilista();
     }
 
@@ -20,17 +19,18 @@ public class TelaPrincipal {
         int opcao = 0;
 
         System.out.println("[1] Cadastrar elemento");
-        System.out.print("[2] Carregar elementos pré-definidos");
+        System.out.println("[2] Carregar elementos pré-definidos");
         System.out.println("[3] Remover elemento");
         System.out.println("[4] Listar todos");
         System.out.println("[5] Buscar elemento");
-        System.out.print("[0] Encerrar programa");
+        System.out.print("[0] Encerrar programa \n");
 
         opcao = teclado.nextInt();
 
         switch (opcao) {
             case 1:
                 System.out.println("Digite o nome, curso, profissão e salário do indivíduo a ser adicionado, respectivamente");
+                teclado.nextLine();
                 String nome = teclado.nextLine();
                 String curso = teclado.nextLine();
                 String prof = teclado.nextLine();
@@ -40,7 +40,7 @@ public class TelaPrincipal {
                 break;
             case 2:
                 ctrlMultilista.carregaElementos();
-                ctrlMultilista.listaElementos();
+                System.out.println(ctrlMultilista.listaElementos());
                 maisOperacoes();
                 break;
             case 3:

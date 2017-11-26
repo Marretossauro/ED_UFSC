@@ -7,13 +7,11 @@ import java.util.Scanner;
 public class TelaBusca {
 
     private Scanner teclado;
-    private TelaPrincipal telaPrincipal;
     private ControladorMultilista ctrlMultilista;
 
     public TelaBusca() {
         this.teclado = new Scanner(System.in);
         this.ctrlMultilista = new ControladorMultilista();
-        this.telaPrincipal = new TelaPrincipal();
     }
 
     public void menu() {
@@ -21,7 +19,7 @@ public class TelaBusca {
 
         System.out.println("[1] Busca simples");
         System.out.println("[2] Busca Composta");
-        System.out.println("[3] Volta para o menu principal");
+        System.out.println("[3] Volta para o menu principal \n");
 
         opcao = teclado.nextInt();
 
@@ -33,6 +31,7 @@ public class TelaBusca {
                 buscaComposta();
                 break;
             case 3:
+                TelaPrincipal telaPrincipal = new TelaPrincipal();
                 telaPrincipal.menu();
                 break;
             default:
@@ -55,13 +54,14 @@ public class TelaBusca {
         switch (opcao) {
             case 1:
                 System.out.println("Digite o curso que você deseja para filtrar a busca");
+                teclado.nextLine();
                 String curso = teclado.nextLine();
                 System.out.println(ctrlMultilista.buscaPorCurso(curso));
-                ;
                 maisOperacoes();
                 break;
             case 2:
                 System.out.println("Digite a profissão que você deseja para filtrar a busca");
+                teclado.nextLine();
                 String prof = teclado.nextLine();
                 System.out.println(ctrlMultilista.buscarPorProfissao(prof));
                 maisOperacoes();
@@ -102,6 +102,7 @@ public class TelaBusca {
             case 1:
 
                 System.out.println("Digite o curso e a profissão, respectivamente");
+                teclado.nextLine();
                 String curso = teclado.nextLine();
                 String prof = teclado.nextLine();
                 System.out.println(ctrlMultilista.buscarCursoProfissao(curso, prof));
@@ -112,6 +113,7 @@ public class TelaBusca {
 
                 System.out.println("Digite o curso e o intervalo de salário");
                 System.out.println("Qual o curso desejado para filtrar a busca?");
+                teclado.nextLine();
                 curso = teclado.nextLine();
                 System.out.println("Digite o valor mínimo e valor máximo do intervalo para filtrar o salário, respectivamente");
                 double min = teclado.nextDouble();
@@ -124,6 +126,7 @@ public class TelaBusca {
 
                 System.out.println("Digite a profissão e o intervalo de salário");
                 System.out.println("Qual a profissão desejada para filtrar a busca?");
+                teclado.nextLine();
                 prof = teclado.nextLine();
                 System.out.println("Digite o valor mínimo e valor máximo do intervalo para filtrar o salário, respectivamente");
                 min = teclado.nextDouble();
