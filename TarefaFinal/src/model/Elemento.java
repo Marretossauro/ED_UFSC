@@ -8,9 +8,9 @@ public class Elemento {
     private String nome;
     private Map<Integer, String> cursos = new TreeMap<>();
     private Map<Integer, String> profissoes = new TreeMap<>();
-    private Map<Integer, String> salarios = new TreeMap<>();
+    private Map<Integer, Double> salarios = new TreeMap<>();
 
-    public Elemento(String nome, Map<Integer, String> cursos, Map<Integer, String> profissoes, Map<Integer, String> salarios) {
+    public Elemento(String nome, Map<Integer, String> cursos, Map<Integer, String> profissoes, Map<Integer, Double> salarios) {
         this.nome = nome;
         this.cursos = cursos;
         this.profissoes = profissoes;
@@ -21,10 +21,6 @@ public class Elemento {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public Map<Integer, String> getCursos() {
         return cursos;
     }
@@ -33,7 +29,7 @@ public class Elemento {
         return profissoes;
     }
 
-    public Map<Integer, String> getSalarios() {
+    public Map<Integer, Double> getSalarios() {
         return salarios;
     }
 
@@ -44,6 +40,6 @@ public class Elemento {
                 ", cursos=" + cursos +
                 ", profissoes=" + profissoes +
                 ", salarios=" + salarios +
-                '}';
+                '}'+"\n";
     }
 }
