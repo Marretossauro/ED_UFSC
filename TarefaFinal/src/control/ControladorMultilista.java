@@ -17,14 +17,14 @@ public class ControladorMultilista {
     private ControladorMultilista() {
         this.diretorioPrincipal = new DiretorioPrincipal();
     }
-
+    //singleton
     public static ControladorMultilista getCtrlMultlist() {
         if (ctrlMultList == null) {
             ctrlMultList = new ControladorMultilista();
         }
         return ctrlMultList;
     }
-
+    //fim singleton
     public void insereElemento(String nome, String curso, String profissao, Double salario) {
         Map<Integer, String> cursoMap = new TreeMap<>();
         cursoMap.put(index, curso);
@@ -110,4 +110,5 @@ public class ControladorMultilista {
     public void excluiElemento(Integer id) {
         diretorioPrincipal.getDiretorio().remove(id);
     }
+
 }
