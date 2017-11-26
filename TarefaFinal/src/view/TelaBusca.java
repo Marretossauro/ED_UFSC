@@ -15,6 +15,7 @@ public class TelaBusca {
     }
 
     public void menu() {
+
         int opcao = 0;
 
         System.out.println("[1] Busca simples");
