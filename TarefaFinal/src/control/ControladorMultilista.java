@@ -14,11 +14,12 @@ public class ControladorMultilista {
     private int index = 0;
     private Elemento elemento;
 
-    private ControladorMultilista(){
+    private ControladorMultilista() {
         this.diretorioPrincipal = new DiretorioPrincipal();
     }
-    public static ControladorMultilista getCtrlMultlist(){
-        if (ctrlMultList == null){
+
+    public static ControladorMultilista getCtrlMultlist() {
+        if (ctrlMultList == null) {
             ctrlMultList = new ControladorMultilista();
         }
         return ctrlMultList;
@@ -38,14 +39,14 @@ public class ControladorMultilista {
     }
 
     public void carregaElementos() {
-        insereElemento("Marcelo", "SIN","Web Developer", 900.00);
-        insereElemento("Rodolfo", "SIN","Suporte", 1200.00);
-        insereElemento("José Eduardo De Lucca", "CCO","Professor", 5000.00);
-        insereElemento("Kauan", "CCO","Suporte", 720.00);
-        insereElemento("Matheus", "SIN","Web Developer", 4500.00);
-        insereElemento("Jorge", "EEL","Técnico", 1000.45);
-        insereElemento("Linus", "CCO","Engenheiro de Software", 50000.38);
-        insereElemento("Rafael", "ADM","Rapper", 500.29);
+        insereElemento("Marcelo", "SIN", "Web Developer", 900.00);
+        insereElemento("Rodolfo", "SIN", "Suporte", 1200.00);
+        insereElemento("José Eduardo De Lucca", "CCO", "Professor", 5000.00);
+        insereElemento("Kauan", "CCO", "Suporte", 720.00);
+        insereElemento("Matheus", "SIN", "Web Developer", 4500.00);
+        insereElemento("Jorge", "EEL", "Técnico", 1000.45);
+        insereElemento("Linus", "CCO", "Engenheiro de Software", 50000.38);
+        insereElemento("Rafael", "ADM", "Rapper", 500.29);
     }
 
     public Map<Integer, Elemento> listaElementos() {
@@ -55,7 +56,7 @@ public class ControladorMultilista {
     public Map<Integer, Elemento> buscaPorCurso(String curso) {
         Map<Integer, Elemento> cursosMap;
         cursosMap = diretorioPrincipal.getDiretorio().entrySet().stream()
-                .filter(c -> c.getValue().getCursos().get(c.getKey()).equals(curso))
+                .filter(c -> c.getValue().getCursos().get(c.getKey()).equalsIgnoreCase(curso))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
         return cursosMap;
     }
@@ -63,7 +64,7 @@ public class ControladorMultilista {
     public Map<Integer, Elemento> buscarPorProfissao(String profissao) {
         Map<Integer, Elemento> profissoesMap;
         profissoesMap = diretorioPrincipal.getDiretorio().entrySet().stream()
-                .filter(p -> p.getValue().getProfissoes().get(p.getKey()).equals(profissao))
+                .filter(p -> p.getValue().getProfissoes().get(p.getKey()).equalsIgnoreCase(profissao))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
         return profissoesMap;
     }
@@ -80,7 +81,7 @@ public class ControladorMultilista {
     public Map<Integer, Elemento> buscarCursoProfissao(String curso, String profissao) {
         Map<Integer, Elemento> cursoProfissaoMap;
         cursoProfissaoMap = diretorioPrincipal.getDiretorio().entrySet().stream()
-                .filter(cp -> cp.getValue().getCursos().get(cp.getKey()).equals(curso) && cp.getValue().getProfissoes().get(cp.getKey()).equals(profissao))
+                .filter(cp -> cp.getValue().getCursos().get(cp.getKey()).equalsIgnoreCase(curso) && cp.getValue().getProfissoes().get(cp.getKey()).equalsIgnoreCase(profissao))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
         return cursoProfissaoMap;
     }
@@ -88,7 +89,7 @@ public class ControladorMultilista {
     public Map<Integer, Elemento> buscarCursoSalario(String curso, double min, double max) {
         Map<Integer, Elemento> cursoSalarioMap;
         cursoSalarioMap = diretorioPrincipal.getDiretorio().entrySet().stream()
-                .filter(cs -> cs.getValue().getCursos().get(cs.getKey()).equals(curso) && cs.getValue().getSalarios().get(cs.getKey()) > min
+                .filter(cs -> cs.getValue().getCursos().get(cs.getKey()).equalsIgnoreCase(curso) && cs.getValue().getSalarios().get(cs.getKey()) > min
                         && cs.getValue().getSalarios().get(cs.getKey()) < max)
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
         return cursoSalarioMap;
@@ -97,7 +98,7 @@ public class ControladorMultilista {
     public Map<Integer, Elemento> buscarProfissaoSalario(String profissao, double min, double max) {
         Map<Integer, Elemento> profissaoSalarioMap;
         profissaoSalarioMap = diretorioPrincipal.getDiretorio().entrySet().stream()
-                .filter(ps -> ps.getValue().getProfissoes().get(ps.getKey()).equals(profissao) && ps.getValue().getSalarios().get(ps.getKey()) > min
+                .filter(ps -> ps.getValue().getProfissoes().get(ps.getKey()).equalsIgnoreCase(profissao) && ps.getValue().getSalarios().get(ps.getKey()) > min
                         && ps.getValue().getSalarios().get(ps.getKey()) < max)
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
         return profissaoSalarioMap;
