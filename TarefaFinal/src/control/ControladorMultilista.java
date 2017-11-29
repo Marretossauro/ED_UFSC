@@ -44,7 +44,7 @@ public class ControladorMultilista {
         insereElemento("José Eduardo De Lucca", "CCO", "Professor", 5000.00);
         insereElemento("Kauan", "CCO", "Suporte", 720.00);
         insereElemento("Matheus", "SIN", "Web Developer", 4500.00);
-        insereElemento("Marcos", "EEL", "Técnico", 1000.45);
+        insereElemento("Marcos", "EEL", "Técnico", 600.45);
         insereElemento("Linus", "CCO", "Engenheiro de Software", 50000.38);
         insereElemento("Raphael", "ADM", "Rapper", 500.29);
     }
